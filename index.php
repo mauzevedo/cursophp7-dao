@@ -50,9 +50,18 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+//inseri e altera usuario
 $usuario = new Usuario();
 $usuario->loadById(6);
 $usuario->update("professor", "!@#$%");
+
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
 
 echo $usuario;
 
